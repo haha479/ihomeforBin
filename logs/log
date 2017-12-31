@@ -1,0 +1,414 @@
+[I 171229 18:06:55 web:2063] 304 GET /register.html (127.0.0.1) 12.82ms
+[W 171229 18:06:55 web:2063] 404 GET /api/piccode?pre=&cur=d7b4f1e4-198f-4726-8452-403904038a3f (127.0.0.1) 5.19ms
+[I 171229 18:46:01 web:2063] 304 GET /register.html (127.0.0.1) 3.40ms
+[I 171229 18:46:01 web:2063] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.27ms
+[I 171229 18:46:01 web:2063] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.97ms
+[I 171229 18:46:01 web:2063] 304 GET /static/css/reset.css (127.0.0.1) 1.88ms
+[I 171229 18:46:01 web:2063] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.71ms
+[I 171229 18:46:01 web:2063] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.54ms
+[I 171229 18:46:01 web:2063] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.44ms
+[I 171229 18:46:01 web:2063] 304 GET /static/images/logo@128x59.png (127.0.0.1) 3.35ms
+[I 171229 18:46:01 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.44ms
+[I 171229 18:46:01 web:2063] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.99ms
+[W 171229 18:46:01 web:2063] 404 GET /api/piccode?pre=&cur=464cebed-d721-4b7e-9c1a-58112977ed17 (127.0.0.1) 2.19ms
+[W 171229 18:46:03 web:2063] 404 GET /api/piccode?pre=464cebed-d721-4b7e-9c1a-58112977ed17&cur=26a5f094-e0da-4a5f-8db2-89b1aaf1b7bd (127.0.0.1) 1.52ms
+[W 171229 18:46:03 web:2063] 404 GET /api/piccode?pre=26a5f094-e0da-4a5f-8db2-89b1aaf1b7bd&cur=78613b37-0d4c-4715-bcbf-cc66b7be0dbd (127.0.0.1) 2.79ms
+[W 171229 18:46:04 web:2063] 404 GET /api/piccode?pre=78613b37-0d4c-4715-bcbf-cc66b7be0dbd&cur=289d61e8-a7b5-40fe-82dd-19fdae0427f9 (127.0.0.1) 1.19ms
+[I 171229 18:46:06 web:2063] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.96ms
+[I 171229 18:50:24 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/urls.py modified; restarting server
+[I 171229 18:50:33 web:2063] 304 GET /register.html (127.0.0.1) 6.78ms
+[I 171229 18:50:34 web:2063] 200 GET /api/piccode?pre=&cur=d48fab47-3105-4cd6-99a4-32feecb206cd (127.0.0.1) 98.14ms
+[E 171229 18:52:13 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 42, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 18:52:13 web:2063] 500 POST /api/smscode (127.0.0.1) 9.14ms
+[I 171229 18:52:26 web:2063] 200 GET /api/piccode?pre=d48fab47-3105-4cd6-99a4-32feecb206cd&cur=2937b7e3-2cd4-4ed2-b6e9-34c41969a5ac (127.0.0.1) 25.47ms
+[I 171229 18:52:27 web:2063] 200 GET /api/piccode?pre=2937b7e3-2cd4-4ed2-b6e9-34c41969a5ac&cur=ebf5c1fc-d120-43ff-a7bb-e1745a2b46e1 (127.0.0.1) 23.27ms
+[I 171229 18:52:28 web:2063] 200 GET /api/piccode?pre=ebf5c1fc-d120-43ff-a7bb-e1745a2b46e1&cur=68633128-6133-4129-9bd4-40226f92ad43 (127.0.0.1) 14.95ms
+[I 171229 18:55:40 web:2063] 304 GET /login.html (127.0.0.1) 1.54ms
+[I 171229 18:55:40 web:2063] 304 GET /static/css/ihome/login.css (127.0.0.1) 1.30ms
+[I 171229 18:55:40 web:2063] 304 GET /static/js/ihome/login.js (127.0.0.1) 1.11ms
+[I 171229 18:55:42 web:2063] 200 GET /api/piccode?pre=&cur=f978f10b-f3c7-40bd-93ac-80f5d86732bd (127.0.0.1) 21.49ms
+[I 171229 19:18:55 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/urls.py modified; restarting server
+[I 171229 19:19:34 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:19:41 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[W 171229 19:19:50 web:2063] 404 GET /login (127.0.0.1) 9.11ms
+[I 171229 19:19:57 web:2063] 200 GET /api/piccode?pre=&cur=86a503f2-f6b2-4afe-ad28-0ae1c37c0e07 (127.0.0.1) 45.40ms
+[E 171229 19:20:06 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 42, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:20:06 web:2063] 500 POST /api/smscode (127.0.0.1) 2.82ms
+[I 171229 19:21:07 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:21:31 web:2063] 304 GET /register.html (127.0.0.1) 8.43ms
+[I 171229 19:21:31 web:2063] 200 GET /api/piccode?pre=&cur=89f4e667-01f8-4b2b-bbd3-76949eca1a4d (127.0.0.1) 53.40ms
+[E 171229 19:21:43 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 42, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:21:43 web:2063] 500 POST /api/smscode (127.0.0.1) 3.42ms
+[I 171229 19:22:37 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:22:42 web:2063] 304 GET /register.html (127.0.0.1) 10.63ms
+[I 171229 19:22:43 web:2063] 200 GET /api/piccode?pre=&cur=67c95f2d-1594-4ac7-8ac3-d5be90e9ceba (127.0.0.1) 45.69ms
+[E 171229 19:22:51 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 45, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:22:51 web:2063] 500 POST /api/smscode (127.0.0.1) 5.07ms
+[I 171229 19:24:51 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:25:05 web:2063] 304 GET /register.html (127.0.0.1) 13.79ms
+[I 171229 19:25:05 web:2063] 200 GET /api/piccode?pre=&cur=75a48814-5d79-47f0-beff-d4ee7423039d (127.0.0.1) 48.86ms
+[E 171229 19:25:18 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 45, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:25:18 web:2063] 500 POST /api/smscode (127.0.0.1) 7.74ms
+[I 171229 19:25:49 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:25:54 web:2063] 304 GET /register.html (127.0.0.1) 9.35ms
+[I 171229 19:25:55 web:2063] 200 GET /api/piccode?pre=&cur=ce9d5808-aca4-4807-b508-707b71a3e5a2 (127.0.0.1) 44.54ms
+[E 171229 19:25:59 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 45, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:25:59 web:2063] 500 POST /api/smscode (127.0.0.1) 5.99ms
+[I 171229 19:27:29 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:27:32 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:27:37 web:2063] 304 GET /register.html (127.0.0.1) 9.10ms
+[I 171229 19:27:37 web:2063] 200 GET /api/piccode?pre=&cur=d38e60b8-d2d5-4584-950b-7f5880a9252b (127.0.0.1) 34.13ms
+[E 171229 19:27:41 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 45, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:27:41 web:2063] 500 POST /api/smscode (127.0.0.1) 4.99ms
+[I 171229 19:28:02 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:28:06 web:2063] 304 GET /register.html (127.0.0.1) 9.79ms
+[I 171229 19:28:06 web:2063] 200 GET /api/piccode?pre=&cur=59b19239-b056-4d13-a5b7-c6a6ba711488 (127.0.0.1) 56.05ms
+[E 171229 19:28:11 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 45, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:28:11 web:2063] 500 POST /api/smscode (127.0.0.1) 5.46ms
+[I 171229 19:28:21 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:28:25 web:2063] 304 GET /register.html (127.0.0.1) 18.67ms
+[I 171229 19:28:25 web:2063] 200 GET /api/piccode?pre=&cur=5700f373-6058-4bbc-9575-040450b7a3c3 (127.0.0.1) 32.36ms
+[E 171229 19:28:36 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 45, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:28:36 web:2063] 500 POST /api/smscode (127.0.0.1) 9.84ms
+[I 171229 19:29:12 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:36:12 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/urls.py modified; restarting server
+[I 171229 19:36:19 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/urls.py modified; restarting server
+[I 171229 19:43:19 web:2063] 304 GET /register.html (127.0.0.1) 15.77ms
+[I 171229 19:43:19 web:2063] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.69ms
+[I 171229 19:43:19 web:2063] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.48ms
+[I 171229 19:43:19 web:2063] 304 GET /static/css/reset.css (127.0.0.1) 0.93ms
+[I 171229 19:43:19 web:2063] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.02ms
+[I 171229 19:43:19 web:2063] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.95ms
+[I 171229 19:43:19 web:2063] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.71ms
+[I 171229 19:43:19 web:2063] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.49ms
+[I 171229 19:43:19 web:2063] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.04ms
+[I 171229 19:43:19 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.05ms
+[I 171229 19:43:19 web:2063] 200 GET /api/piccode?pre=&cur=2d224bb4-3659-4be2-82be-aacafa65782c (127.0.0.1) 42.40ms
+[I 171229 19:43:19 web:2063] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 6.15ms
+[E 171229 19:43:29 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:43:29 web:2063] 500 POST /api/smscode (127.0.0.1) 5.86ms
+[I 171229 19:46:19 web:2063] 304 GET /register.html (127.0.0.1) 13.88ms
+[I 171229 19:46:19 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 3.05ms
+[I 171229 19:46:19 web:2063] 200 GET /api/piccode?pre=&cur=e9016b52-38b7-4e99-8572-c4dd75393e53 (127.0.0.1) 42.85ms
+[E 171229 19:46:31 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:46:31 web:2063] 500 POST /api/smscode (127.0.0.1) 4.73ms
+[I 171229 19:48:03 web:2063] 200 GET /register.html (127.0.0.1) 12.44ms
+[I 171229 19:48:03 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.32ms
+[I 171229 19:48:03 web:2063] 200 GET /api/piccode?pre=&cur=2f5ce42f-d53a-402d-9237-ce0a50a5d45e (127.0.0.1) 49.98ms
+[E 171229 19:48:08 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:48:08 web:2063] 500 POST /api/smscode (127.0.0.1) 3.92ms
+[I 171229 19:49:17 web:2063] 304 GET /register.html (127.0.0.1) 10.63ms
+[I 171229 19:49:17 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.59ms
+[I 171229 19:49:18 web:2063] 200 GET /api/piccode?pre=&cur=f49684a5-dd9e-499d-9746-8250a41da675 (127.0.0.1) 53.86ms
+[E 171229 19:49:31 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:49:31 web:2063] 500 POST /api/smscode (127.0.0.1) 5.10ms
+[I 171229 19:49:53 web:2063] 304 GET /register.html (127.0.0.1) 1.34ms
+[I 171229 19:49:53 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.81ms
+[I 171229 19:49:54 web:2063] 200 GET /api/piccode?pre=&cur=0e68600c-8827-49ed-9da4-506456da7881 (127.0.0.1) 18.22ms
+[E 171229 19:50:15 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:50:15 web:2063] 500 POST /api/smscode (127.0.0.1) 3.05ms
+[I 171229 19:50:45 web:2063] 304 GET /register.html (127.0.0.1) 1.53ms
+[I 171229 19:50:45 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.63ms
+[I 171229 19:50:45 web:2063] 200 GET /api/piccode?pre=&cur=35ef1d96-9a76-42c5-9287-56c85bb35ee8 (127.0.0.1) 19.18ms
+[E 171229 19:50:54 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:50:54 web:2063] 500 POST /api/smscode (127.0.0.1) 2.60ms
+[I 171229 19:51:36 web:2063] 304 GET /register.html (127.0.0.1) 1.76ms
+[I 171229 19:51:36 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.21ms
+[I 171229 19:51:36 web:2063] 200 GET /api/piccode?pre=&cur=4470690d-4eca-4e40-a8b9-445421227838 (127.0.0.1) 15.23ms
+[E 171229 19:51:41 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:51:41 web:2063] 500 POST /api/smscode (127.0.0.1) 5.07ms
+[I 171229 19:54:05 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:54:21 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 19:57:55 web:2063] 304 GET /register.html (127.0.0.1) 10.60ms
+[I 171229 19:57:56 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.63ms
+[I 171229 19:57:56 web:2063] 200 GET /api/piccode?pre=&cur=5d73186a-3419-4a3f-b97d-b9938df7077c (127.0.0.1) 36.84ms
+[E 171229 19:58:01 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 19:58:01 web:2063] 500 POST /api/smscode (127.0.0.1) 6.28ms
+[I 171229 19:59:34 web:2063] 304 GET /register.html (127.0.0.1) 40.38ms
+[I 171229 19:59:34 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.29ms
+[I 171229 20:00:08 web:2063] 304 GET /register.html (127.0.0.1) 24.58ms
+[I 171229 20:00:08 web:2063] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.88ms
+[I 171229 20:00:08 web:2063] 200 GET /api/piccode?pre=&cur=bfbb5cce-b2e8-4acd-9301-4927d15d9463 (127.0.0.1) 37.25ms
+[E 171229 20:00:17 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 20:00:17 web:2063] 500 POST /api/smscode (127.0.0.1) 5.25ms
+[I 171229 20:06:38 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:06:43 web:2063] 200 GET /register.html (127.0.0.1) 7.73ms
+[I 171229 20:06:43 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.69ms
+[I 171229 20:06:43 web:2063] 200 GET /api/piccode?pre=&cur=3bdf2580-1350-40bd-a91a-612c05159830 (127.0.0.1) 34.78ms
+[I 171229 20:06:51 web:2063] 200 GET /api/piccode?pre=3bdf2580-1350-40bd-a91a-612c05159830&cur=46fd8756-a369-42be-8a5b-5fa8ab340b44 (127.0.0.1) 16.29ms
+[E 171229 20:06:57 web:1590] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '93', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py", line 44, in post
+        if not all((mobile, piccodem, piccode_id)):
+    NameError: global name 'piccodem' is not defined
+[E 171229 20:06:57 web:2063] 500 POST /api/smscode (127.0.0.1) 3.91ms
+[I 171229 20:09:19 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:09:23 web:2063] 304 GET /register.html (127.0.0.1) 11.28ms
+[I 171229 20:09:23 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.30ms
+[I 171229 20:09:23 web:2063] 200 GET /api/piccode?pre=&cur=c30463c5-eb51-4ebc-8889-0b73c045fba3 (127.0.0.1) 39.36ms
+[E 171229 20:09:36 VerifyCode:77] 'SMSCodeHandler' object has no attribute 'applicatin'
+[E 171229 20:09:36 VerifyCode:96] 'CCP' object has no attribute 'SendTemplateSMS'
+[I 171229 20:09:36 web:2063] 200 POST /api/smscode (127.0.0.1) 7.32ms
+[I 171229 20:10:33 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:11:42 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:12:30 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/libs/yuntongxun/SendTemplateSMS.py modified; restarting server
+[I 171229 20:12:39 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/libs/yuntongxun/SendTemplateSMS.py modified; restarting server
+[I 171229 20:13:00 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/libs/yuntongxun/SendTemplateSMS.py modified; restarting server
+[I 171229 20:13:27 web:2063] 304 GET /register.html (127.0.0.1) 8.00ms
+[I 171229 20:13:27 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.24ms
+[I 171229 20:13:27 web:2063] 200 GET /api/piccode?pre=&cur=aa9b2651-701c-4d82-8b14-d53629565d09 (127.0.0.1) 35.56ms
+[I 171229 20:13:36 web:2063] 200 GET /api/piccode?pre=aa9b2651-701c-4d82-8b14-d53629565d09&cur=cd0c9af1-0fdb-4683-87e8-74edbceae11d (127.0.0.1) 19.28ms
+[E 171229 20:13:41 VerifyCode:74] 'SMSCodeHandler' object has no attribute 'applicatin'
+[E 171229 20:13:41 VerifyCode:93] 'CCP' object has no attribute 'SendTemplateSMS'
+[I 171229 20:13:41 web:2063] 200 POST /api/smscode (127.0.0.1) 2.84ms
+[I 171229 20:15:24 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:15:31 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:15:41 web:2063] 304 GET /register.html (127.0.0.1) 13.65ms
+[I 171229 20:15:41 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.44ms
+[I 171229 20:15:42 web:2063] 200 GET /api/piccode?pre=&cur=7cfbde7c-137a-4785-9f42-b7636eb6ecdb (127.0.0.1) 47.30ms
+[E 171229 20:15:48 VerifyCode:74] 'SMSCodeHandler' object has no attribute 'applicatin'
+[I 171229 20:15:49 web:2063] 200 POST /api/smscode (127.0.0.1) 1085.18ms
+[I 171229 20:16:05 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:17:27 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:17:30 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:17:54 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:18:26 web:2063] 304 GET /register.html (127.0.0.1) 11.94ms
+[I 171229 20:18:26 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 4.11ms
+[I 171229 20:18:26 web:2063] 200 GET /api/piccode?pre=&cur=a007f734-94eb-4ee2-8bc4-ff39e6bdc40c (127.0.0.1) 62.29ms
+[E 171229 20:18:33 VerifyCode:73] 'SMSCodeHandler' object has no attribute 'applicatin'
+[I 171229 20:18:33 web:2063] 200 POST /api/smscode (127.0.0.1) 719.04ms
+[I 171229 20:19:32 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/libs/yuntongxun/SendTemplateSMS.py modified; restarting server
+[I 171229 20:19:40 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/libs/yuntongxun/SendTemplateSMS.py modified; restarting server
+[I 171229 20:23:22 web:2063] 304 GET /register.html (127.0.0.1) 19.50ms
+[I 171229 20:23:22 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.87ms
+[I 171229 20:23:23 web:2063] 200 GET /api/piccode?pre=&cur=4c71c6d6-8cf5-4739-86dd-8551814794bd (127.0.0.1) 29.50ms
+[E 171229 20:23:28 VerifyCode:73] 'SMSCodeHandler' object has no attribute 'applicatin'
+[I 171229 20:23:29 web:2063] 200 POST /api/smscode (127.0.0.1) 735.43ms
+[E 171229 20:25:03 web:1590] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '109', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py", line 56, in post
+        passwd = hashlib.sha256(password + config.passwd_hash_key).hexdigest()
+    AttributeError: 'module' object has no attribute 'passwd_hash_key'
+[E 171229 20:25:03 web:2063] 500 POST /api/register (127.0.0.1) 21.61ms
+[I 171229 20:39:44 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/libs/yuntongxun/SendTemplateSMS.py modified; restarting server
+[I 171229 20:41:10 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/urls.py modified; restarting server
+[I 171229 20:41:26 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 20:42:05 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 20:42:11 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:42:23 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:42:31 web:2063] 304 GET /register.html (127.0.0.1) 14.00ms
+[I 171229 20:42:31 web:2063] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.04ms
+[I 171229 20:42:31 web:2063] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.01ms
+[I 171229 20:42:31 web:2063] 304 GET /static/css/reset.css (127.0.0.1) 1.39ms
+[I 171229 20:42:31 web:2063] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.98ms
+[I 171229 20:42:31 web:2063] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.61ms
+[I 171229 20:42:31 web:2063] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.61ms
+[I 171229 20:42:31 web:2063] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.34ms
+[I 171229 20:42:31 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.81ms
+[I 171229 20:42:31 web:2063] 304 GET /static/images/logo@128x59.png (127.0.0.1) 9.53ms
+[I 171229 20:42:32 web:2063] 200 GET /api/piccode?pre=&cur=6d6eccf5-4edf-4a9c-a96d-0c41b391408c (127.0.0.1) 36.90ms
+[I 171229 20:42:32 web:2063] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 6.04ms
+[I 171229 20:43:23 web:2063] 200 POST /api/register (127.0.0.1) 6.56ms
+[I 171229 20:50:01 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:50:04 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:51:07 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/constants.py modified; restarting server
+[I 171229 20:52:33 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/constants.py modified; restarting server
+[I 171229 20:52:38 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:52:45 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/VerifyCode.py modified; restarting server
+[I 171229 20:53:01 web:2063] 304 GET /register.html (127.0.0.1) 7.12ms
+[I 171229 20:53:01 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.67ms
+[I 171229 20:53:02 web:2063] 200 GET /api/piccode?pre=&cur=12ad5d54-dd53-49c9-a89b-5ace8fbafb39 (127.0.0.1) 32.58ms
+[I 171229 20:53:17 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/constants.py modified; restarting server
+[I 171229 20:53:41 web:2063] 304 GET /register.html (127.0.0.1) 9.52ms
+[I 171229 20:53:42 web:2063] 200 GET /api/piccode?pre=&cur=e8f01dfa-8167-482e-a39a-7b6b71d952a9 (127.0.0.1) 48.48ms
+[E 171229 20:53:49 VerifyCode:70] 'SMSCodeHandler' object has no attribute 'applicatin'
+[I 171229 20:53:55 web:2063] 200 POST /api/smscode (127.0.0.1) 6159.82ms
+[E 171229 20:56:33 web:1590] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '109', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py", line 58, in post
+        passwd = hashlib.sha256(password + config.passwd_hash_key).hexdigest()
+    AttributeError: 'module' object has no attribute 'passwd_hash_key'
+[E 171229 20:56:33 web:2063] 500 POST /api/register (127.0.0.1) 6.13ms
+[I 171229 21:09:00 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:09:09 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:09:19 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:09:21 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:09:37 web:2063] 304 GET /register.html (127.0.0.1) 12.29ms
+[I 171229 21:09:38 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.35ms
+[I 171229 21:09:38 web:2063] 200 GET /api/piccode?pre=&cur=3ae64595-db47-40f4-a4c9-a1e600c778f0 (127.0.0.1) 89.42ms
+[E 171229 21:09:48 VerifyCode:70] 'SMSCodeHandler' object has no attribute 'applicatin'
+[I 171229 21:09:49 web:2063] 200 POST /api/smscode (127.0.0.1) 746.73ms
+[E 171229 21:10:11 web:1590] Uncaught exception POST /api/register (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='POST', uri='/api/register', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8888', 'Content-Length': '109', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Host': '127.0.0.1:8888', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8888/register.html', 'Cookie': '_xsrf=2|e42846d9|e532821762f6ab4a92c28926731bcb4e|1514541523', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/pysenior/.virtualenvs/py2/local/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py", line 58, in post
+        passwd = hashlib.sha256(password + config.passwd_hash_key).hexdigest()
+    AttributeError: 'module' object has no attribute 'passwd_hash_key'
+[E 171229 21:10:11 web:2063] 500 POST /api/register (127.0.0.1) 6.34ms
+[I 171229 21:10:41 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:10:46 web:2063] 304 GET /register.html (127.0.0.1) 10.25ms
+[I 171229 21:10:47 web:2063] 200 GET /api/piccode?pre=&cur=21763040-5779-4f38-93e5-9ffdeb566cac (127.0.0.1) 64.71ms
+[I 171229 21:11:16 web:2063] 200 POST /api/register (127.0.0.1) 4.40ms
+[I 171229 21:11:38 web:2063] 200 POST /api/register (127.0.0.1) 3.27ms
+[I 171229 21:13:46 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:14:09 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:14:31 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:21:15 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:22:49 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:25:18 autoreload:198] /home/pysenior/PycharmProjects/09-tornado/06-ihome/ihomeforBin/handlers/Passport.py modified; restarting server
+[I 171229 21:29:36 web:2063] 304 GET / (127.0.0.1) 12.66ms
+[I 171229 21:29:36 web:2063] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 4.94ms
+[I 171229 21:29:36 web:2063] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 12.64ms
+[I 171229 21:29:36 web:2063] 304 GET /static/css/ihome/index.css (127.0.0.1) 2.84ms
+[I 171229 21:29:36 web:2063] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 3.13ms
+[I 171229 21:29:36 web:2063] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.66ms
+[I 171229 21:29:36 web:2063] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.37ms
+[I 171229 21:29:36 web:2063] 304 GET /static/js/template.js (127.0.0.1) 4.08ms
+[I 171229 21:29:36 web:2063] 304 GET /static/js/ihome/index.js (127.0.0.1) 2.33ms
+[W 171229 21:29:36 web:2063] 404 GET /api/check_login (127.0.0.1) 6.04ms
+[W 171229 21:29:36 web:2063] 404 GET /api/house/index (127.0.0.1) 1.29ms
+[I 171229 21:29:39 web:2063] 304 GET /login.html (127.0.0.1) 2.49ms
+[I 171229 21:29:39 web:2063] 304 GET /static/css/ihome/login.css (127.0.0.1) 2.12ms
+[I 171229 21:29:39 web:2063] 304 GET /static/js/ihome/login.js (127.0.0.1) 2.34ms
+[I 171229 21:29:41 web:2063] 304 GET /register.html (127.0.0.1) 1.27ms
+[I 171229 21:29:41 web:2063] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.58ms
+[I 171229 21:29:42 web:2063] 200 GET /api/piccode?pre=&cur=8c4b1761-948d-42d7-b0f1-7207132f1cc5 (127.0.0.1) 36.52ms
+[W 171229 21:29:45 web:2063] 404 GET /api/check_login (127.0.0.1) 3.16ms
+[W 171229 21:29:45 web:2063] 404 GET /api/house/index (127.0.0.1) 1.90ms
