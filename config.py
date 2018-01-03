@@ -30,4 +30,4 @@ log_path = os.path.join(os.path.dirname(__file__),'logs/log')
 log_level = 'debug'
 
 # 密码加密秘钥
-passwd_has_key = 'nlgCjaTXQX2jpupQFQLoQo5N4OkEmkeHsHD9+BBx2WQ='
+passwd_hash_key = 'nlgCjaTXQX2jpupQFQLoQo5N4OkEmkeHsHD9+BBx2WQ='

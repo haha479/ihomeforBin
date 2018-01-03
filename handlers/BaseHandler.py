@@ -9,7 +9,7 @@ class BaseHandler(RequestHandler):
 	@property
 	def db(self):
 		'''作为RequestHandler对象的db属性'''
-		return self.applicatin.db
+		return self.application.db
 
 	@property
 	def redis(self):

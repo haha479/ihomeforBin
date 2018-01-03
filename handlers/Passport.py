@@ -62,11 +62,13 @@ class RegisterHandler(BaseHandler):
 		passwd = hashlib.sha256(password + config.passwd_hash_key).hexdigest()
 		sql = "insert into ih_user_profile(up_name, up_mobile, up_passwd) values(%(name)s, %(mobile)s, %(passwd)s);"
 		try:
+			print '进入保存用户信息'
 			user_id = self.db.execute(sql, name=mobile, mobile=mobile, passwd=passwd)
-			print '已经将用户信息保存到了mysql,user_id==',user_id
+			print '已经将用户信息保存到了mysql'
+			print 'user_id==',user_id
 		except Exception as e:
 			logging.error(e)
-			print "验证码已存在"
+			print '存储失败'
 			return self.write(dict(errcode=RET.DATAEXIST, errmsg="手机号已存在"))
 		
 		# 用session记录用户的登陆状态

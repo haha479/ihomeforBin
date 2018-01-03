@@ -37,6 +37,9 @@ class SMSCodeHandler(BaseHandler):
 		mobile = self.json_args.get("mobile")
 		piccode = self.json_args.get("piccode")
 		piccode_id = self.json_args.get("piccode_id")
+		print 'mobile==',mobile
+		print 'piccode==',piccode
+		print 'piccode_id==',piccode_id
 		# 参数校验
 		if not all((mobile, piccode, piccode_id)):
 			return self.write(dict(errcode=RET.PARAMERR, errmsg='参数缺失'))
