@@ -1,2 +1,0 @@
-[E 180103 11:58:15 Passport:70] (1062, "Duplicate entry '18210556477' for key 'up_name'")
-[I 180103 11:58:15 web:2063] 200 POST /api/register (127.0.0.1) 76.35ms

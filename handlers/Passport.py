@@ -19,9 +19,6 @@ class RegisterHandler(BaseHandler):
 		mobile = self.json_args.get('mobile')
 		sms_code = self.json_args.get('phonecode')
 		password = self.json_args.get('password')
-		print 'mobile=',mobile
-		print 'sms_code=',sms_code
-		print 'password=',password
 		# 检查参数
 		if not all([mobile, sms_code, password]):
 			return self.write(dict(errcode=RET.PARAMERR,errmsg="参数不完整"))
@@ -36,21 +33,17 @@ class RegisterHandler(BaseHandler):
 		if "2468" != sms_code:
 			try:
 				real_sms_code = self.redis.get("sms_code_%s"%mobile)
-				print '从redis中拿出的短信验证码:',real_sms_code
 			except Exception as e:
 				loggging.error(e)
-				print '从redis中拿短信验证码出错'
 				return self.write(dict(errcode=RET.DBERR,errmsg="查询验证码出错"))
 
 			# 判断短信验证码是否过期
 			if not real_sms_code:
-				print "验证码过期"
 				return self.write(dict(errcode=RET.NODATA,errmsg="验证码过期"))
 			
 			# 对比用户填写的验证码与真实值
 			# if real_sms_code != sms_code and sms_code != "2468":
 			if real_sms_code != sms_code:
-				print "验证码错误"
 				return self.write(dict(errcode=RET.DATAERR, errmsg="验证码错误"))
 			
 			# try:
@@ -61,28 +54,21 @@ class RegisterHandler(BaseHandler):
 		# 保存数据,　同时判断手机号是否存在, 判断的依据是数据库中mobile字段的唯一约束
 		passwd = hashlib.sha256(password + config.passwd_hash_key).hexdigest()
 		sql = "insert into ih_user_profile(up_name, up_mobile, up_passwd) values(%(name)s, %(mobile)s, %(passwd)s);"
-		try:
-			print '进入保存用户信息'
+		try:                                                                           
 			user_id = self.db.execute(sql, name=mobile, mobile=mobile, passwd=passwd)
-			print '已经将用户信息保存到了mysql'
-			print 'user_id==',user_id
 		except Exception as e:
 			logging.error(e)
-			print '存储失败'
 			return self.write(dict(errcode=RET.DATAEXIST, errmsg="手机号已存在"))
-		
+
 		# 用session记录用户的登陆状态
 		session = Session(self)
 		session.data["user_id"] = user_id
 		session.data["mobile"] = mobile
 		session.data["name"] = mobile
-		user = session.get('user_id')
-		print 'user_id==',user
 		try:
 			session.save()
 		except Exception as e:
 			logging.error(e)
-
 		self.write(dict(errcode=RET.OK, errmsg="注册成功"))
 
 
@@ -91,8 +77,9 @@ class LoginHandler(BaseHandler):
 	def post(self):
 		# 获取参数
 		mobile = self.json_args.get("mobile")
-		passwd = self.json_args.get("password")
-
+		password = self.json_args.get("password")
+		print 'login中mobile==',mobile
+		print 'login中passwd==',password
 		# 检查参数
 		if not all([mobile, password]):
 			return self.write(dict(errcode=RET.PARAMERR, errmsg="参数错误"))
